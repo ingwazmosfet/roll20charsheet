@@ -1,0 +1,830 @@
+<head>
+  <body>
+    <div class="background">
+        <div class="subdiv1">
+            <img style  = "height: 80px; float: left;" src="ingwaz2.png">
+          <h1 style = "display: inline-block">
+            FSP v2.0.1
+          </h1>
+          <h1 style = "display: inline-block">CHARACTER SHEET</h1>
+          <img style  = "height: 80px; float: right;" src="copyright.png">
+        </div>
+          <div class="subdiv1_left">
+            <h2><b>CHARACTER BACKGROUND</b></h2>
+            <div class="textinputdivleft"><label><b>NAME:</b></label><input type = "text" name="attr_character_name"></input></div>
+
+            <div class="textinputdivright">
+            <label><b>RACE:</b></label>                    
+            <select style = "font-size: 10; height: 20px; margin-left:5; margin-top: 5;">
+                        <option value="human">human</option>
+                        <option value="eladrin">eladrin</option>
+                        <option value="woodelf">woodelf</option>
+                        <option value="gnome">gnome</option>
+                        <option value="dwarf">dwarf</option>
+                        <option value="drow">drow</option>
+                        <option value="troll">troll</option>
+                        <option value="ork">ork</option>
+                        <option value="halfling">halfling</option>
+                        <option value="ogre">ogre</option>
+                        <option value="vah'shir">vah'shir</option>
+                        <option value="iskar">iskar</option>
+                        <option value="other">other</option>
+            </select>
+            </div>
+            <div class="textinputdivleft"><label><b>AGE:</b></label><input type = "number" name="attr_age"></input></div>
+            <div class="textinputdivright">
+            <label><b>SEX:</b></label>                    
+            <select style = "font-size: 10; height: 20px; margin-left:5; margin-top: 5;">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="hermaphroditic">hermaphroditic</option>
+            </select>
+            </div>
+            <div class="textinputdivleft">
+            <label><b>SIGN:</b></label>                    
+            <select style = "font-size: 10; height: 20px; margin-left:5; margin-top: 5;">
+                        <option value="venal">VENAL</option>
+                        <option value="querious">QUERIOUS</option>
+                        <option value="fountain">FOUNTAIN</option>
+                        <option value="stain">STAIN</option>
+                        <option value="delve">DELVE</option>
+                        <option value="providence">PROVIDENCE</option>
+                        <option value="oasis">OASIS</option>
+                        <option value="feythabolis">FEYTHABOLIS</option>
+                        <option value="teneferis">TENEFERIS</option>
+                        <option value="forge">FORGE</option>
+            </select>
+            </div>
+            <div class="textinputdivright">
+                        <label><b>DEITY:</b></label>   
+                        <select style = "font-size: 10; height: 20px; margin-left:6; margin-top: 5;">
+                        <option value="insecure">INSECURE</option>
+                        <option value="vain">VAIN</option>
+                        <option value="paranoid">PARANOID</option>
+                        <option value="hedonistic">HEDONISTIC</option>
+                        <option value="greedy">GREEDY</option>
+                        <option value="romantic">ROMANTIC</option>
+                        <option value="gluttonous">GLUTTONOUS</option>
+                        <option value="vengeful">VENGEFUL</option>
+                        <option value="hateful">HATEFUL</option>
+            </select>
+            </div>
+            <div class="textinputdivleft">
+            <label><b>DEITY:</b></label>   
+                        <select style = "font-size: 10; height: 20px; margin-left:6; margin-top: 5;">
+                        <option value="atheist">ATHEIST</option>
+                        <option value="agnostic">AGNOSTIC</option>
+                        <option value="io">IO</option>
+                        <option value="the_triad">THE TRIAD</option>
+                        <option value="faeronia">FAERONIA</option>
+                        <option value="voreas">VOREAS</option>
+                        <option value="cyric">CYRIC</option>
+                        <option value="svaroth">SVAROTH</option>
+                        <option value="rongomai">RONGOMAI</option>
+                        <option value="vecna">VECNA</option>
+                        <option value="fulgore">FULGORE</option>
+                        <option value="moradin">MORADIN</option>
+                        <option value="bahamut">BAHAMUT</option>
+            </select>
+            </div>
+            <div class="textinputdivright"><label><b>TRAIT:</b></label><input type = "text" name="attr_trait"></input></div>
+          </div>
+          <div class="subdiv1_right">
+            <h2><b>ADVENTURE STATUS</b></h2>
+            <div class="numberinputdivleft"><label><b>LEVEL:</b></label><input style = "margin-left: 20;width: 30%" type = "number" name="attr_level"></input></div>
+            <div class="numberinputdivleft"><label><b>EXP:</b></label><input type = "number" name="attr_exp"></input></div>
+            <div class="numberinputdivleft"><label><b>INSP:</b></label><input style = "margin-left: 20;width: 30%" type = "number" name="attr_inspiration"></input></div>
+            <div class="numberinputdivcenter"><label class="numberlabel"><b>DSTS:</b></label><input style = "margin-left: 20;width: 30%" type = "number" name="attr_deaths"></input></div>
+            <div class="textareadiv">NOTES:<textarea class="notes1"></textarea></div>
+          </div>
+          <div class="subdiv2_left">
+            <h2><b>ABILITY SCORES</b></h2>
+            <div class="abilityscorediv"><label style = "width: 11%" class="abilityscorelabel"><b>STR BASE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_strength"></input><label style = "width: 7%" class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_strength"></input><label style = "width: 7%" class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_strength" readonly></input><label class="abilityscorelabel" style = "width: 30px"><b>MOD:</b></label><input class="abilityscoreinput" type = "number" name="attr_strengthmod" readonly></input><button value = "/roll 1d20 + @{attr_strengthmod}" style = "width: 60px;">ROLL</button></div>
+            <div class="abilityscorediv"><label style = "width: 11%" class="abilityscorelabel"><b>VIG BASE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_vigor"></input><label style = "width: 7%" class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_vigor"></input><label style = "width: 7%" class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_vigor" readonly></input><label class="abilityscorelabel" style = "width: 30px"><b>MOD:</b></label><input class="abilityscoreinput" type = "number" name="attr_vigormod" readonly></input><button value = "/roll 1d20 + @{attr_vigormod}" style = "width: 60px;">ROLL</button></div>
+            <div class="abilityscorediv"><label style = "width: 11%" class="abilityscorelabel"><b>INT BASE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_intellect"></input><label style = "width: 7%" class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_intellect"></input><label style = "width: 7%" class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_intellect" readonly></input><label class="abilityscorelabel" style = "width: 30px"><b>MOD:</b></label><input class="abilityscoreinput" type = "number" name="attr_intellectmod" readonly></input><button value = "/roll 1d20 + @{attr_intellectmod}" style = "width: 60px;">ROLL</button></div>
+            <div class="abilityscorediv"><label style = "width: 11%" class="abilityscorelabel"><b>MYS BASE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_mysticism"></input><label style = "width: 7%" class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_mysticism"></input><label style = "width: 7%" class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_mysticism" readonly></input><label class="abilityscorelabel" style = "width: 30px"><b>MOD:</b></label><input class="abilityscoreinput" type = "number" name="attr_mysticismmod" readonly></input><button value = "/roll 1d20 + @{attr_mysticismmod}" style = "width: 60px;">ROLL</button></div>
+            <div class="abilityscorediv"><label style = "width: 11%" class="abilityscorelabel"><b>DEX BASE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_dexterity"></input><label style = "width: 7%" class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_dexterity"></input><label style = "width: 7%" class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_dexterity" readonly></input><label class="abilityscorelabel" style = "width: 30px"><b>MOD:</b></label><input class="abilityscoreinput" type = "number" name="attr_dexteritymod" readonly></input><button value = "/roll 1d20 + @{attr_dexteritymod}" style = "width: 60px;">ROLL</button></div>
+            <div class="abilityscorediv"><label style = "width: 11%" class="abilityscorelabel"><b>CHA BASE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_charisma"></input><label style = "width: 7%" class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_charisma"></input><label style = "width: 7%" class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_charisma" readonly></input><label class="abilityscorelabel" style = "width: 30px"><b>MOD:</b></label><input class="abilityscoreinput" type = "number" name="attr_charismamod" readonly></input><button value = "/roll 1d20 + @{attr_charismamod}" style = "width: 60px;">ROLL</button></div>
+          </div>
+          <div class="subdiv2_right">
+            <h2><b>CHARACTER STATUS</b></h2>
+            <div class="numberinputdivleft"><label><b>HP</b></label><input style = "width: 50%" type = "number" name="attr_hp"></input><t style = "margin-top: 10">&nbsp/&nbsp</t><input style = "width: 50%" type = "number" name="attr_hp_max"></div>
+            <div class="numberinputdivleft"><label><b>MP</b></label><input style = "width: 50%" type = "number" name="attr_mp"></input><t style = "margin-top: 10">&nbsp/&nbsp</t><input style = "width: 50%" type = "number" name="attr_mp_max"></div>
+            <div class="numberinputdivleft"><label><b>AC:</b></label><input type = "number" name="attr_ac"></input></div>
+            <div class="numberinputdivleft"><label><b>RES:</b></label><input type = "number" name="attr_resistance"></input></div>
+            <div class="numberinputdivleft"><label><b>INIT:</b></label><input type = "number" name="attr_initiative"></input></div>
+            <div class="numberinputdivleft"><label><b>ALN:</b></label><input type = "text" name="attr_alignment"></input></div>
+            <div class="numberinputdivleft"><label><b>DIV:</b></label><input type = "number" name="attr_divine_favor"></input></div>
+            <div style = "height: 125px" class="textareadiv">NOTES:<textarea class="notes1"></textarea></div>
+          </div>
+          <div style = "height: 850px" class="subdiv3_left">
+            <h2><b>INVENTORY</b></h2>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM1:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM2:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM3:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM4:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM5:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM6:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM7:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM8:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM9:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM10:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM11:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM12:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM13:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM14:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM15:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM16:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div style = "height: 25px; width: 60%" class="textinputdivleft"><label style = "font-size: 10"><b>ITEM17:</b></label><input style = "width: 60%" type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px ; width: 35%"  class="textinputdivright"><label style = "font-size: 10"><b>WEIGHT:</b></label><input style = "margin-left: 10; width: 50px" type = "number" style = "font-size:10" ></input></div>
+            <div class="numberinputdivright"><label><b>ENC</b></label><input style = "width: 50%" type = "number" name="attr_enc" readonly></input><t style = "margin-top: 10">&nbsp/&nbsp</t><input style = "width: 50%" type = "number" name="attr_enc_max" readonly></div>
+            <div class="abilityscorediv"><label style = "width: 5%" class="abilityscorelabel"><b>PLAT:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_strength"></input><label style = "width: 5%" class="abilityscorelabel"><b>GOLD:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_strength"></input><label style = "width: 10%" class="abilityscorelabel"><b>SILVER:</b></label><input class="abilityscoreinput" type = "number" name="attr_strength"></input><label style = "width: 10%" class="abilityscorelabel"><b>COPPER:</b></label><input class="abilityscoreinput" type = "number" name="attr_strengthmod"></input></div>
+            <div style = "height: 180px" class="textareadiv">NOTES:<textarea style = "height: 150px" class="notes1"></textarea></div>
+          </div>
+          <div style = "height: 850px" class="subdiv3_right">
+            <h2><b>EQUIPMENT</b></h2>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>PRIMARY:</b></label><input type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>OFFHAND:</b></label><input type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>AMMO:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>HEAD:</b></label><input type = "text"style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>SHOULDERS:</b></label><input type = "text"style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>CLOAK:</b></label><input type = "text" style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>CHEST:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>WAIST:</b></label><input type = "text"style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text"style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>HANDS:</b></label><input type = "text"style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text"style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>FEET:</b></label><input type = "text"style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>RING1:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text"style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>RING2:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text"style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>RING3:</b></label><input type = "text"style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>EARS:</b></label><input type = "text"style = "font-size:10" ></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>NECK:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>CHARM:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivleft"><label style = "font-size: 10"><b>ANUS:</b></label><input type = "text" style = "font-size:10"></input></div>
+            <div style = "height: 25px" class="textinputdivright"><label style = "font-size: 10"><b>BONUS:</b></label><input type = "text"style = "font-size:10"></input></div>
+            <div style = "height: 200px" class="textareadiv">NOTES:<textarea style = "height: 180px" class="notes1"></textarea></div>
+          </div>
+
+       
+
+            <div style = "height: 470px"  class="subdiv4_left">
+                <b>MAIN SKILLS</b>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>ACROBATICS:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_acrobatics"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_acrobatics"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_acrobatics_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>BLUFF:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_bluff"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_bluff"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_bluff_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>PERSUASION:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_persusaion"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_persuasion"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_persuasion_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>INTIMIDATION:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_intimidation"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_intimidation"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_intimidation_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>NATURE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_nature"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_nature"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_nature_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>ARCANA:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_arcana"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_arcana"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_arcana_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>DIPLOMACY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_diplomacy"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_diplomacy"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_diplomacy_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>STREETWISE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_streetwise"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_streetwise"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_streetwise_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>RESEARCH:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_research"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_research"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_research_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>SWIMMING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_swimming"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_swimming"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_swimming_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>STEALTH:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_stealth"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_stealth"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_stealth_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>RELIGION:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_religion"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_religion"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_religion_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>PTS TO SPEND:</b></label><input class="abilityscoreinput" type = "number" name="attr_mainskill_pts_to_spend" readonly></input></div>
+                </div>
+            <div style = "height: 740px" class="subdiv4_right">
+                <b>KNOWLEDGE SKILLS</b>
+                <div class="abilityscorediv"><label style = "width: 85px"  class="abilityscorelabel"><b>NAVIGATION:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_navigation"></input><label style = "width: 40px" class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_navigation"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_navigation_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>SEAMANSHIP:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_seamanship"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_seamanship"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_seamanship_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>HERBALISM:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_herbalism"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_herbalism"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_herbalism_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>ANIMAL LORE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_animal_lore"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_animal_lore"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_animal_lore_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>MYCOLOGY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_mycology"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_mycology"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_mycology_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>PLANAR:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_planar"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_planar"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_planar_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>HISTORY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_history"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_history"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_history_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>NOBILITY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_nobility"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_nobility"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_nobility_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>ARCHITECTURE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_architecture"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_architecture"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_architecture_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>METALLURGY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_metallurgy"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_metallurgy"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_metallurgy_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>GEOLOGY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_geology"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_geology"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_geology_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>RUNEIFORM:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_runeiform"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_runeiform"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_runeiform_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>PSYCHOLOGY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_psychology"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_psychology"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_psychology_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>TACTICS:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_tactics"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_tactics"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_tactics_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>BUSHCRAFT:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_bushcraft"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_bushcraft"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_bushcraft_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>APPRAISAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_appraisal"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_appraisal"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_appraisal_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>RIDING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_riding"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_riding"></input><label style = "width: 40px" class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_riding_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>LINGUISTICS:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_linguistics"></input><label style = "width: 40px"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_linguistics"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_linguistics_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>DUNGEONEERING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_dungeoneering"></input><label style = "width: 40px"    class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_dungeoneering"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_dungeoneering_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 85px" class="abilityscorelabel"><b>ANATOMY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_anatomy"></input><label style = "width: 40px"    class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_anatomy"></input><label style = "width: 40px"  class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_anatomy_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>PTS TO SPEND:</b></label><input class="abilityscoreinput" type = "number" name="attr_knowledgeskill_pts_to_spend" readonly></input></div>
+            </div>
+            <div style = "height: 490px"  class="subdiv4_left">
+                <b>WEAPON SKILLS</b>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>1H SLASHING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_acrobatics"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_1h_slashing"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_1h_slashing_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>2H SLASHING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_bluff"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_2h_slashing"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_2h_slashing_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>1H BLUNT:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_persusaion"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_1h_blunt"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_1h_blunt_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>2H BLUNT:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_intimidation"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_2h_blunt"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_2h_blunt_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>1H PIERCING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_nature"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_1h_piercing"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_1h_piercing_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>2H PIERCING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_arcana"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_2h_piercing"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_2h_piercing_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>ARCHERY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_diplomacy"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_archery"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_archery_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>THROWING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_streetwise"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_throwing"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_throwing_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>STAFF:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_research"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_staff"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_staff_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>IMPROVISED:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_swimming"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_improvised"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_improvised_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>PTS TO SPEND:</b></label><input class="abilityscoreinput" type = "number" name="attr_weaponskill_pts_to_spend" readonly></input></div>
+                <div class="textareadiv">NOTES:<textarea class="notes1"></textarea></div>
+            </div>
+            <div style = "height: 550px"  class="subdiv4_right">
+                <b>LANGUAGE SKILLS</b>
+                <div class="abilityscorediv"><label style = "width: 40%"  class="abilityscorelabel"><b>COMMON:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_common"></input><label style = "width: 20%" class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_common"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_common_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>ELVISH:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_elvish"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_elvish"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_elvish_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>DROW:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_drow"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_drow"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_drow_total"></input><button style = "width: 60px;">ROLL</button></div>            
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>DWARVISH:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_dwarvish"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_dwarvish"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_dwarvish_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>GNOMISH:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_gnomish"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_gnomish"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_gnomish_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>DRACONIC:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_draconic"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_draconic"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_draconic_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>CELESTIAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_celestial"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_celestial"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_celestial_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>INFERNAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_infernal"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_infernal"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_infernal_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>GOBLINESE:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_goblinese"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_goblinese"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_goblinese_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>OGRIC:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_ogric"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_ogric"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_ogric_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>ORKISH:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_orkish"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_orkish"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_orkish_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>TROLLISH:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_trollish"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_trollish"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_trollish_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>UNDERCOMMON:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_undercommon"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_undercommon"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_undercommon_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>OUTLANDISH:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_outlandish"></input><label style = "width: 20%"  class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_outlandish"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_outlandish_total"></input><button style = "width: 60px;">ROLL</button></div>
+                <div class="abilityscorediv"><label style = "width: 40%" class="abilityscorelabel"><b>PTS TO SPEND:</b></label><input class="abilityscoreinput" type = "number" name="attr_languageskill_pts_to_spend" readonly></input></div>
+            </div>
+            <div style = "height: 530px"  class="subdiv4_left">
+                <b>CRAFTING SKILLS</b>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>MINING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_mining"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_mining"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_mining_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>SKINNING:</b>:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_skinning"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_skinning"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_skinning_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>LEATHERWORKING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_leatherworking"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_leatherworking"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_leatherworking_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>TAILORING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_tailoring"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_tailoring"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_tailoring_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>SMITHING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_smithing"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_smithing"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_smithing_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>TINKERING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_tinkering"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_tinkering"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_tinkering_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>ALCHEMY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_alchemy"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_alchemy"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_alchemy_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>SCRIVENING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_scrivening"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_scrivening"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_scrivening_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>CARTOGRAPHY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_cartography"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_cartography"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_cartography_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>ENCHANTING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_enchanting"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_enchanting"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_enchanting_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>FLETCHING:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_fletching"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_fletching"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_fletching_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>CARPENTRY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_carpentry"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_carpentry"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_carpentry_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>MASONRY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_masonry"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_masonry"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_masonry_total"></input></div>
+                <div class="abilityscorediv"><label style = "width: 25%" class="abilityscorelabel"><b>SURGERY:</b></label><input class="abilityscoreinput" type = "number" name="attr_base_surgery"></input><label class="abilityscorelabel"><b>BONUS:</b></label><input class="abilityscoreinput" type = "number" name="attr_bonus_surgery"></input><label class="abilityscorelabel"><b>TOTAL:</b></label><input class="abilityscoreinput" type = "number" name="attr_surgery_total"></input></div>
+                <div class="abilityscorediv"><label class="abilityscorelabel"><b>PTS TO SPEND:</b></label><input class="abilityscoreinput" type = "number" name="attr_craftingskill_pts_to_spend" readonly></input></div>
+            </div>
+
+
+            <div style = "height: 1000px; width: 95%"  class="subdiv4_left">
+                <h2><b>SPELL BOOK</b></h2>
+                <div style = "border-style: solid; border-width: thin; border-top-color: #ddd; border-right-color: #ddd; border-left-color: #ddd; border-bottom-color: #ddd"class="spelldiv">
+                    <button style = "margin-left: 10; margin-top: 10;font-size: 10; width: 45px; height: 20px;"><b>CAST</b></button>
+                    <label style = "margin-top: 10" class="spelllabel"><b>SPELL NAME:</b></label>
+                    <input type = "text" style = "font-size: 10; text-align: center; margin-top: 10; vertical-align:middle; display:table-cell; padding: 0; height: 20px; width: 150px"></input>
+                    <label  style = "margin-top: 15"  class="spelllabel" style = "width: 7%"><b>MANA COST:</b></label>
+                    <input type = "number" style = "font-size: 10; text-align: center; margin-top: 10; vertical-align:middle; display:table-cell; padding: 0; height: 20px; width: 50px"></input>
+                    <label class="spelllabel" style = "width: 7%"><b>ELEMENT:</b></label>
+                        <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                            <option value="fire">fire</option>
+                            <option value="ice">ice</option>
+                            <option value="lightning">lightning</option>
+                            <option value="necrotic">necrotic</option>
+                            <option value="radiant">radiant</option>
+                            <option value="toxic">toxic</option>
+                        </select>
+                    <label class="spelllabel" style = "width: 3%"><b>AOE:</b></label>
+                    <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                        <option value="ray">ray</option>
+                        <option value="ballsplash1">ballsplash1</option>
+                        <option value="ballsplash1">ballsplash2</option>
+                        <option value="ballsplash1">ballsplash3</option>
+                        <option value="cone1">cone1</option>
+                        <option value="cone2">cone2</option>
+                        <option value="cone3">cone3</option>
+                        <option value="aoe1">aoe1</option>
+                        <option value="aoe2">aoe2</option>
+                        <option value="aoe3">aoe3</option>
+                    </select>
+                    <label class="spelllabel" style = "width: 3%"><b>CAST:</b></label>
+                    <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                        <option value="range">at range</option>
+                        <option value="touch">touch</option>
+                        <option value="centered">centered</option>
+                        <option value="remote">remote</option>
+                    </select>
+                    <label class="spelllabel" style = "width: 7%"><b>CHANNELED:</b></label>
+                    <select style = "font-size: 10; height: 20px; margin-right: 10; margin-top: 10;">
+                        <option value="ischanneled">yes</option>
+                        <option value="notchanneled">no</option>
+                    </select>
+                </div>
+                <div style = "border-style: solid; border-width: thin; border-top-color: #ddd; border-right-color: #ddd; border-left-color: #ddd; border-bottom-color: #ddd"class="spelldiv">
+                    <label class="spelllabel" style = "width: 3%"><b>BUFF:</b></label>
+                    <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                        <option value="notbuff">NO</option>
+                        <option value="isbuff">BUFF</option>
+                        <option value="debuff">DEBUFF</option>
+                    </select>
+                    <label class="spelllabel" style = "width: 3%"><b>ATTR:</b></label>
+                    <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                        <option value="none">none</option>
+                        <option value="buffstr">STR</option>
+                        <option value="buffstr">VIG</option>
+                        <option value="buffstr">INT</option>
+                        <option value="buffstr">MYS</option>
+                        <option value="buffstr">DEX</option>
+                        <option value="buffstr">CHA</option>
+                        <option value="buffstr">AC</option>
+                        <option value="buffstr">RES</option>
+                        <option value="buffstr">ENC</option>
+                    </select>
+                    <label class="spelllabel" style = "width: 4%"><b>SKILL:</b></label>
+                    <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                        <option value="none">none</option>
+                        <option value="buffacrobatics">ACROBATICS</option>
+                        <option value="buffbluff">BLUFF</option>
+                        <option value="buffpersuasion">PERSUASION</option>
+                        <option value="buffintimidation">INTIMIDATION</option>
+                        <option value="buffnature">NATURE</option>
+                        <option value="buffarcana">ARCANA</option>
+                        <option value="buffdiplomacy">DIPLOMACY</option>
+                        <option value="buffstreetwise">STREETWISE</option>
+                        <option value="buffresearch">RESEARCH</option>
+                        <option value="buffswimming">SWIMMING</option>
+                        <option value="buffstealth">STEALTH</option>
+                        <option value="buffreligion">RELIGION</option>
+                    </select>
+                    <label class="spelllabel" style = "width: 3%"><b>AMT:</b></label>
+                    <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                        <option value="dotdiecount1">1d</option>
+                        <option value="dotdiecount2">2d</option>
+                        <option value="dotdiecount3">3d</option>
+                        <option value="dotdiecount4">4d</option>
+                        <option value="dotdiecount5">5d</option>
+                        <option value="dotdiecount6">6d</option>
+                    </select>
+                    <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                            <option value="dotdamagedie4">4</option>
+                            <option value="dotdamagedie6">6</option>
+                            <option value="dotdamagedie8">8</option>
+                            <option value="dotdamagedie10">10</option>
+                            <option value="dotdamagedie12">12</option>
+                            <option value="dotdamagedie20">20</option>
+                    </select>
+                    <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                            <option value="bonusless6">-6</option>
+                            <option value="bonusless5">-5</option>
+                            <option value="bonusless4">-4</option>
+                            <option value="bonusless3">-3</option>
+                            <option value="bonusless2">-2</option>
+                            <option value="bonusless1">-1</option>
+                            <option value="bonu0">+0</option>
+                            <option value="bonus1">+1</option>
+                            <option value="bonus2">+2</option>
+                            <option value="bonus3">+3</option>
+                            <option value="bonus4">+4</option>
+                            <option value="bonus5">+5</option>
+                            <option value="bonus6">+6</option>
+                    </select>
+                    <label class="spelllabel" style = "width: 3%"><b>HEAL:</b></label>
+                    <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                        <option value="isheal">YES</option>
+                        <option value="notheal">NO</option>
+                    </select>
+                    <label class="spelllabel" style = "width: 9%"><b>OTHER EFFECT:</b></label>
+                    <input type = "text" style = "font-size: 10; text-align: center; margin-top: 10; vertical-align:middle; display:table-cell; padding: 0; height: 20px; width: 150px"></input>
+                </div>
+                <div style= "border-top-color: #ddd; border-right-color: #ddd; border-left-color: #ddd; border-bottom-color: black; border-style: solid; border-width: thin;" class="spelldiv">
+                <label class="spelllabel" style = "width: 10%"><b>CHANNEL TIME:</b></label>
+                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                    <option value="channel1">1</option>
+                    <option value="channel2">2</option>
+                    <option value="channel3">3</option>
+                </select>
+                <label class="spelllabel" style = "width: 2%"><b>DC:</b></label>
+                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                    <option value="intellect">INT</option>
+                    <option value="mysticism">MYS</option>
+                </select>
+                <label class="spelllabel" style = "width: 3%"><b>DOT:</b></label>
+                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                    <option value="isDOT">YES</option>
+                    <option value="notDOT">NO</option>
+                </select>
+                <label class="spelllabel" style = "width: 3%"><b>LEN:</b></label>
+                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                    <option value="dot1">1</option>
+                    <option value="dot2">2</option>
+                    <option value="dot3">3</option>
+                </select>
+                <label class="spelllabel" style = "width: 7%"><b>DOT DMG:</b></label>
+                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                    <option value="dotdiecount1">1d</option>
+                    <option value="dotdiecount2">2d</option>
+                    <option value="dotdiecount3">3d</option>
+                </select>
+                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                        <option value="dotdamagedie4">4</option>
+                        <option value="dotdamagedie6">6</option>
+                        <option value="dotdamagedie8">8</option>
+                        <option value="dotdamagedie10">10</option>
+                        <option value="dotdamagedie12">12</option>
+                        <option value="dotdamagedie20">20</option>
+                </select>
+                <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                        <option value="bonusless6">-6</option>
+                        <option value="bonusless5">-5</option>
+                        <option value="bonusless4">-4</option>
+                        <option value="bonusless3">-3</option>
+                        <option value="bonusless2">-2</option>
+                        <option value="bonusless1">-1</option>
+                        <option value="bonu0">+0</option>
+                        <option value="bonus1">+1</option>
+                        <option value="bonus2">+2</option>
+                        <option value="bonus3">+3</option>
+                        <option value="bonus4">+4</option>
+                        <option value="bonus5">+5</option>
+                        <option value="bonus6">+6</option>
+                </select>
+                <label class="spelllabel" style = "width: 3%"><b>NUKE:</b></label>
+                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                    <option value="isNUKE">YES</option>
+                    <option value="notNUKE">NO</option>
+                </select>
+                <label class="spelllabel" style = "width: 8%"><b>NUKE DMG:</b></label>
+                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                    <option value="dotdiecount1">1d</option>
+                    <option value="dotdiecount2">2d</option>
+                    <option value="dotdiecount3">3d</option>
+                    <option value="dotdiecount4">4d</option>
+                    <option value="dotdiecount5">5d</option>
+                    <option value="dotdiecount6">6d</option>
+                </select>
+                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                        <option value="dotdamagedie4">4</option>
+                        <option value="dotdamagedie6">6</option>
+                        <option value="dotdamagedie8">8</option>
+                        <option value="dotdamagedie10">10</option>
+                        <option value="dotdamagedie12">12</option>
+                        <option value="dotdamagedie20">20</option>
+                </select>
+                <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                        <option value="bonusless6">-6</option>
+                        <option value="bonusless5">-5</option>
+                        <option value="bonusless4">-4</option>
+                        <option value="bonusless3">-3</option>
+                        <option value="bonusless2">-2</option>
+                        <option value="bonusless1">-1</option>
+                        <option value="bonu0">+0</option>
+                        <option value="bonus1">+1</option>
+                        <option value="bonus2">+2</option>
+                        <option value="bonus3">+3</option>
+                        <option value="bonus4">+4</option>
+                        <option value="bonus5">+5</option>
+                        <option value="bonus6">+6</option>
+                </select>
+                </div>
+            </div>
+
+
+                <div style = "height: 1000px; width: 95%"  class="subdiv4_left">
+                        <h2><b>FEATURES</b></h2>
+                        <div style = "border-style: solid; border-width: thin; border-top-color: #ddd; border-right-color: #ddd; border-left-color: #ddd; border-bottom-color: #ddd"class="spelldiv">
+                            <label style = "margin-top: 10" class="spelllabel"><b>FEAT NAME:</b></label>
+                            <input type = "text" style = "font-size: 10; text-align: center; margin-top: 10; vertical-align:middle; display:table-cell; padding: 0; height: 20px; width: 150px"></input>
+                            <label class="spelllabel" style = "width: 3%"><b>TYPE:</b></label>
+                            <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                                <option value="racialfeat">RACIAL</option>
+                                <option value="weaponfeat">WEAPON</option>
+                                <option value="specialfeat">SPECIAL</option>
+                                <option value="divinefeat">DIVINE</option>
+                            </select>
+                            <label class="spelllabel" style = "width: 3%"><b>BUFF:</b></label>
+                            <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                                <option value="notbuff">NO</option>
+                                <option value="isbuff">BUFF</option>
+                                <option value="debuff">DEBUFF</option>
+                            </select>
+                            <label class="spelllabel" style = "width: 3%"><b>ATTR:</b></label>
+                            <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                                <option value="none">none</option>
+                                <option value="buffstr">STR</option>
+                                <option value="buffstr">VIG</option>
+                                <option value="buffstr">INT</option>
+                                <option value="buffstr">MYS</option>
+                                <option value="buffstr">DEX</option>
+                                <option value="buffstr">CHA</option>
+                                <option value="buffstr">AC</option>
+                                <option value="buffstr">RES</option>
+                                <option value="buffstr">ENC</option>
+                            </select>
+                            <label class="spelllabel" style = "width: 4%"><b>SKILL:</b></label>
+                            <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                                <option value="none">none</option>
+                                <option value="buffacrobatics">ACROBATICS</option>
+                                <option value="buffbluff">BLUFF</option>
+                                <option value="buffpersuasion">PERSUASION</option>
+                                <option value="buffintimidation">INTIMIDATION</option>
+                                <option value="buffnature">NATURE</option>
+                                <option value="buffarcana">ARCANA</option>
+                                <option value="buffdiplomacy">DIPLOMACY</option>
+                                <option value="buffstreetwise">STREETWISE</option>
+                                <option value="buffresearch">RESEARCH</option>
+                                <option value="buffswimming">SWIMMING</option>
+                                <option value="buffstealth">STEALTH</option>
+                                <option value="buffreligion">RELIGION</option>
+                            </select>
+                            <label class="spelllabel" style = "width: 4%"><b>AMT:</b></label>
+                            <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                    <option value="bonusless6">-6</option>
+                                    <option value="bonusless5">-5</option>
+                                    <option value="bonusless4">-4</option>
+                                    <option value="bonusless3">-3</option>
+                                    <option value="bonusless2">-2</option>
+                                    <option value="bonusless1">-1</option>
+                                    <option value="bonu0">+0</option>
+                                    <option value="bonus1">+1</option>
+                                    <option value="bonus2">+2</option>
+                                    <option value="bonus3">+3</option>
+                                    <option value="bonus4">+4</option>
+                                    <option value="bonus5">+5</option>
+                                    <option value="bonus6">+6</option>
+                            </select>
+                        </div>
+                        <div style= "border-top-color: #ddd; border-right-color: #ddd; border-left-color: #ddd; border-bottom-color: black; border-style: solid; border-width: thin;" class="spelldiv">
+                        <label class="spelllabel" style = "width: 10%"><b>OTHER EFFECTS:</b></label>
+                        <textarea style = "width: 80%; margin: 5;"></textarea>
+                        </div>
+                    </div>
+
+
+                <div style = "height: 1000px; width: 95%"  class="subdiv4_left">
+                        <h2><b>ABILITIES</b></h2>
+                        <div class="spelldiv">
+                            <div style= "border-color: black; border-style: solid ; border-width: thin; width: 12%; height: 70%; margin-top: 5; margin-left:5; margin-right: 5;" class="spelldiv">
+                               <button style = "font-size: 10"><b>BASIC ATTACK</b></button>
+                            </div>
+                            <label style = "margin-left: 15; margin-top: 15; width:5%" class="spelllabel"><b>WEAPON:</b></label>
+                            <input type = "text" style = "font-size: 10; text-align: center; margin-top: 10; vertical-align:middle; display:table-cell; padding: 0; height: 20px; width: 150px"></input>
+                            <label style = "margin-left: 15; margin-top: 15; width:1%" class="spelllabel"><b>DC:</b></label>
+                            <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                                    <option value="none">none</option>
+                                    <option value="buffstr">STRMOD</option>
+                                    <option value="buffstr">VIGMOD</option>
+                                    <option value="buffstr">INTMOD</option>
+                                    <option value="buffstr">MYSMOD</option>
+                                    <option value="buffstr">DEXMOD</option>
+                                    <option value="buffstr">CHAMOD</option>
+                            </select>
+                            <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                    <option value="bonusless6">-6</option>
+                                    <option value="bonusless5">-5</option>
+                                    <option value="bonusless4">-4</option>
+                                    <option value="bonusless3">-3</option>
+                                    <option value="bonusless2">-2</option>
+                                    <option value="bonusless1">-1</option>
+                                    <option value="bonu0">+0</option>
+                                    <option value="bonus1">+1</option>
+                                    <option value="bonus2">+2</option>
+                                    <option value="bonus3">+3</option>
+                                    <option value="bonus4">+4</option>
+                                    <option value="bonus5">+5</option>
+                                    <option value="bonus6">+6</option>
+                            </select>
+                            <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>RANGE:</b></label>
+                            <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                    <option value="ADJ">ADJ</option>
+                                    <option value="range1">1</option>
+                                    <option value="range2">2</option>
+                                    <option value="range3">3</option>
+                                    <option value="range4">4</option>
+                                    <option value="range5">5</option>
+                                    <option value="range6">6</option>
+                                    <option value="range7">7</option>
+                                    <option value="range8">8</option>
+                                    <option value="range9">9</option>
+                                    <option value="range10">10</option>
+                            </select>
+                            <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>TYPE:</b></label>
+                            <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                <option value="slashing">slashing</option>
+                                <option value="blunt">blunt</option>
+                                <option value="piercing">piercing</option>
+                            </select>
+                            <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>HANDS:</b></label>
+                            <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                <option value="1H">1H</option>
+                                <option value="2H">2H</option>
+                            </select>
+                            <label class="spelllabel" style = "width: 3%"><b>DMG:</b></label>
+                            <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                                <option value="dotdiecount1">1d</option>
+                                <option value="dotdiecount2">2d</option>
+                                <option value="dotdiecount3">3d</option>
+                                <option value="dotdiecount4">4d</option>
+                                <option value="dotdiecount5">5d</option>
+                                <option value="dotdiecount6">6d</option>
+                            </select>
+                            <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                                    <option value="dotdamagedie4">4</option>
+                                    <option value="dotdamagedie6">6</option>
+                                    <option value="dotdamagedie8">8</option>
+                                    <option value="dotdamagedie10">10</option>
+                                    <option value="dotdamagedie12">12</option>
+                                    <option value="dotdamagedie20">20</option>
+                            </select>
+                            <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                    <option value="bonusless6">-6</option>
+                                    <option value="bonusless5">-5</option>
+                                    <option value="bonusless4">-4</option>
+                                    <option value="bonusless3">-3</option>
+                                    <option value="bonusless2">-2</option>
+                                    <option value="bonusless1">-1</option>
+                                    <option value="bonu0">+0</option>
+                                    <option value="bonus1">+1</option>
+                                    <option value="bonus2">+2</option>
+                                    <option value="bonus3">+3</option>
+                                    <option value="bonus4">+4</option>
+                                    <option value="bonus5">+5</option>
+                                    <option value="bonus6">+6</option>
+                            </select>
+                        </div>
+                        <div class="spelldiv">
+                                <div style= "border-color: black; border-style: solid ; border-width: thin; width: 12%; height: 70%; margin-top: 5; margin-left:5; margin-right: 5;" class="spelldiv">
+                                   <button style = "font-size: 10"><b>BASIC ATTACK</b></button>
+                                </div>
+                                <label style = "margin-left: 15; margin-top: 15; width:5%" class="spelllabel"><b>WEAPON:</b></label>
+                                <input type = "text" style = "font-size: 10; text-align: center; margin-top: 10; vertical-align:middle; display:table-cell; padding: 0; height: 20px; width: 150px"></input>
+                                <label style = "margin-left: 15; margin-top: 15; width:1%" class="spelllabel"><b>DC:</b></label>
+                                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                                        <option value="none">none</option>
+                                        <option value="buffstr">STRMOD</option>
+                                        <option value="buffstr">VIGMOD</option>
+                                        <option value="buffstr">INTMOD</option>
+                                        <option value="buffstr">MYSMOD</option>
+                                        <option value="buffstr">DEXMOD</option>
+                                        <option value="buffstr">CHAMOD</option>
+                                </select>
+                                <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                        <option value="bonusless6">-6</option>
+                                        <option value="bonusless5">-5</option>
+                                        <option value="bonusless4">-4</option>
+                                        <option value="bonusless3">-3</option>
+                                        <option value="bonusless2">-2</option>
+                                        <option value="bonusless1">-1</option>
+                                        <option value="bonu0">+0</option>
+                                        <option value="bonus1">+1</option>
+                                        <option value="bonus2">+2</option>
+                                        <option value="bonus3">+3</option>
+                                        <option value="bonus4">+4</option>
+                                        <option value="bonus5">+5</option>
+                                        <option value="bonus6">+6</option>
+                                </select>
+                                <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>RANGE:</b></label>
+                                <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                        <option value="ADJ">ADJ</option>
+                                        <option value="range1">1</option>
+                                        <option value="range2">2</option>
+                                        <option value="range3">3</option>
+                                        <option value="range4">4</option>
+                                        <option value="range5">5</option>
+                                        <option value="range6">6</option>
+                                        <option value="range7">7</option>
+                                        <option value="range8">8</option>
+                                        <option value="range9">9</option>
+                                        <option value="range10">10</option>
+                                </select>
+                                <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>TYPE:</b></label>
+                                <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                    <option value="slashing">slashing</option>
+                                    <option value="blunt">blunt</option>
+                                    <option value="piercing">piercing</option>
+                                </select>
+                                <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>HANDS:</b></label>
+                                <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                    <option value="1H">1H</option>
+                                    <option value="2H">2H</option>
+                                </select>
+                                <label class="spelllabel" style = "width: 3%"><b>DMG:</b></label>
+                                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                                    <option value="dotdiecount1">1d</option>
+                                    <option value="dotdiecount2">2d</option>
+                                    <option value="dotdiecount3">3d</option>
+                                    <option value="dotdiecount4">4d</option>
+                                    <option value="dotdiecount5">5d</option>
+                                    <option value="dotdiecount6">6d</option>
+                                </select>
+                                <select style = "font-size: 10; height: 20px;  margin-top: 10;">
+                                        <option value="dotdamagedie4">4</option>
+                                        <option value="dotdamagedie6">6</option>
+                                        <option value="dotdamagedie8">8</option>
+                                        <option value="dotdamagedie10">10</option>
+                                        <option value="dotdamagedie12">12</option>
+                                        <option value="dotdamagedie20">20</option>
+                                </select>
+                                <select style = "font-size: 10; height: 20px;  margin-right: 5;margin-top: 10;">
+                                        <option value="bonusless6">-6</option>
+                                        <option value="bonusless5">-5</option>
+                                        <option value="bonusless4">-4</option>
+                                        <option value="bonusless3">-3</option>
+                                        <option value="bonusless2">-2</option>
+                                        <option value="bonusless1">-1</option>
+                                        <option value="bonu0">+0</option>
+                                        <option value="bonus1">+1</option>
+                                        <option value="bonus2">+2</option>
+                                        <option value="bonus3">+3</option>
+                                        <option value="bonus4">+4</option>
+                                        <option value="bonus5">+5</option>
+                                        <option value="bonus6">+6</option>
+                                </select>
+                            </div>
+                            <div class="spelldiv">
+                                    <div style= "border-color: black; border-style: solid ; border-width: thin; width: 9%; height: 70%; margin-top: 5; margin-left:6; margin-right: 5;" class="spelldiv">
+                                       <button style = "width: 100%;font-size: 10"><b>ROLL</b></button>
+                                    </div>
+                                    <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>EFFECTS:</b></label>
+                                    <textarea style = "margin-bottom: 5;margin-left: 20; width: 75%"></textarea>
+                            </div>
+                            <div class="spelldiv">
+                            <div style= "border-color: black; border-style: solid ; border-width: thin; width: 9%; height: 70%; margin-top: 5; margin-left:6; margin-right: 5;" class="spelldiv">
+                                <button style = "width: 100%;font-size: 10"><b>ROLL</b></button>
+                            </div>
+                            <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>EFFECTS:</b></label>
+                            <textarea style = "margin-bottom: 5;margin-left: 20; width: 75%"></textarea>
+                            </div>
+                            <div class="spelldiv">
+                                <div style= "border-color: black; border-style: solid ; border-width: thin; width: 9%; height: 70%; margin-top: 5; margin-left:6; margin-right: 5;" class="spelldiv">
+                                    <button style = "width: 100%;font-size: 10"><b>ROLL</b></button>
+                                </div>
+                                <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>EFFECTS:</b></label>
+                                <textarea style = "margin-bottom: 5;margin-left: 20; width: 75%"></textarea>
+                            </div>
+                            <div class="spelldiv">
+                                <div style= "border-color: black; border-style: solid ; border-width: thin; width: 9%; height: 70%; margin-top: 5; margin-left:6; margin-right: 5;" class="spelldiv">
+                                    <button style = "width: 100%;font-size: 10"><b>ROLL</b></button>
+                                </div>
+                                <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>EFFECTS:</b></label>
+                                <textarea style = "margin-bottom: 5;margin-left: 20; width: 75%"></textarea>
+                            </div>
+                            <div class="spelldiv">
+                            <div style= "border-color: black; border-style: solid ; border-width: thin; width: 9%; height: 70%; margin-top: 5; margin-left:6; margin-right: 5;" class="spelldiv">
+                                <button style = "width: 100%;font-size: 10"><b>ROLL</b></button>
+                            </div>
+                            <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>EFFECTS:</b></label>
+                            <textarea style = "margin-bottom: 5;margin-left: 20; width: 75%"></textarea>
+                            </div>
+                            <div class="spelldiv">
+                                <div style= "border-color: black; border-style: solid ; border-width: thin; width: 9%; height: 70%; margin-top: 5; margin-left:6; margin-right: 5;" class="spelldiv">
+                                    <button style = "width: 100%;font-size: 10"><b>ROLL</b></button>
+                                </div>
+                                <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>EFFECTS:</b></label>
+                                <textarea style = "margin-bottom: 5;margin-left: 20; width: 75%"></textarea>
+                            </div>
+                            <div class="spelldiv">
+                                <div style= "border-color: black; border-style: solid ; border-width: thin; width: 9%; height: 70%; margin-top: 5; margin-left:6; margin-right: 5;" class="spelldiv">
+                                    <button style = "width: 100%;font-size: 10"><b>ROLL</b></button>
+                                </div>
+                                <label style = "margin-left: 15; margin-top: 15; width:3%" class="spelllabel"><b>EFFECTS:</b></label>
+                                <textarea style = "margin-bottom: 5;margin-left: 20; width: 75%"></textarea>
+                            </div>
+                </div>
+  </body>
+  
+</head>
+
+<script>
+  function openTab(evt, tabName) {
+  
+    var i, tabcontent, tablinks;
+  
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+</script>
