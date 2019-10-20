@@ -1,0 +1,377 @@
+
+.charsheet {
+background-color: #ddd;
+min-width: 800px;
+}
+.background {
+  min-width: 1050px;
+  min-height: 8000px;
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+  background-color: #ddd;
+}
+
+.textareadiv{
+    float: right;
+    display: flex;
+    font-size: 12;
+    margin: 7;
+    width: 95%;
+    height: 80px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    background-color: #ddd;
+}
+
+
+.spelldiv{
+    float: left;
+    display: flex;
+    font-size: 10;
+    margin: 0;
+    width: 98%;
+    height: 40px;
+    background-color: #ddd;
+
+}
+
+
+.subspelldiv{
+    float: left;
+    display: flex;
+    font-size: 10;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #ddd;
+}
+
+
+.spelllabel{
+    width: 8%;
+    font-size:10;
+    float: left;
+    text-align:left;
+    margin: 1.5%;
+    }
+.skillinputdiv{
+    float: left;
+    display: flex;
+    font-size: 12;
+    margin: 0;
+    width: 95%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    background-color: #ddd;
+}
+.notes1 {
+    width: 90%;
+    margin: 5;
+}
+.textinputdiv{
+    display: flex;
+    font-size: 12;
+    margin: 2;
+    width: 45%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    background-color: #ddd;
+}
+
+.abilityscorediv{
+    display: flex;
+    flex-direction: left;
+    font-size: 12;
+    margin: 2;
+    width: 99%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    background-color: #ddd;
+}
+
+.abilityscoreinput{
+    float: left;
+    display: inline-block;
+    width: 40px;
+    vertical-align: middle;
+}
+
+.abilityscorelabel{
+    float: left;
+    margin-top: 10;
+    font-size: 10;
+    width: 15%;
+    display: flex;
+    flex-direction: left;
+    text-align: left;
+    white-space: nowrap;
+}
+.textinputdivleft{
+    float: left;
+    display: flex;
+    font-size: 12;
+    margin: 2;
+    width: 45%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    background-color: #ddd;
+}
+.textinputdivright{
+    float: right;
+    display: flex;
+    font-size: 12;
+    margin: 2;
+    width: 45%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    background-color: #ddd;
+}
+.numberinputdivcenter{
+    text-align: center;
+    display: flex;
+    font-size: 12;
+    margin-left: 140;
+    margin-top: 10;
+    width: 30%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    background-color: #ddd;
+}
+.numberinputdivleft{
+    float: left;
+    display: flex;
+    font-size: 12;
+    margin: 2;
+    width: 30%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    background-color: #ddd;
+}
+.numberinputdivright{
+    float: right;
+    display: flex;
+    font-size: 12;
+    margin: 2;
+    width: 30%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    background-color: #ddd;
+}
+input {
+    display: flex;
+    width: 60%;
+    margin: 5;
+}
+
+label {
+    align-items: left;
+    width: 25%;
+    margin: 5px;
+    text-align:center;
+    vertical-align:middle;
+    display:table-cell;
+    margin-top: 4%;
+}
+
+.tabs{
+  text-align: left;
+  margin-left: 20px;
+}
+
+.subdiv1 {
+  margin: 20px;
+  display: block;
+  float: middle;
+  padding: 10px;
+  padding: 10px;
+  text-align: center;
+  height: 85px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+}
+
+.subdiv1_left {
+  margin: 20px;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  height: 200px;
+  width: 440px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+}
+
+.subdiv1_right {
+  margin: 20px;
+  float: right;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  height: 200px;
+  width: 440px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+}
+
+.subdiv2_left {
+  margin: 20px;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  height: 300px;
+  width: 440px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+}
+
+.subdiv2_right {
+  margin: 20px;
+  float: right;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  height: 300px;
+  width: 440px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+}
+
+.subdiv3_left {
+  margin: 20px;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  height: 350px;
+  width: 440px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+}
+
+.subdiv3_right {
+  margin: 20px;
+  float: right;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  height: 350px;
+  width: 440px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+}
+
+.subdiv4_left {
+  margin: 20px;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  height: 600px;
+  width: 440px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+}
+
+.subdiv4_right {
+  margin: 20px;
+  float: right;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  height: 600px;
+  width: 440px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+}
+
+.subdiv2 {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: #ddd;
+}
+
+
+h1{
+  font-size: 20;
+}
+
+h2{
+  font-size: 15;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.numberlabel {
+    margin-top: 8;
+    float: left;
+    width: 40%;
+}
+
